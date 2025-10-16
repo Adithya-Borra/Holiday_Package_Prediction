@@ -67,20 +67,20 @@ MonthlyIncome	Monthly income of the customer
 TotalVisiting	Total number of visits made for follow-up or interaction
 ### Approach
 
-Data Preprocessing
+##### Data Preprocessing
 
 Handled missing and inconsistent values.
 Converted categorical variables into numerical using Label Encoding and One-Hot Encoding.
 Scaled numerical features where needed.
 Split the data into 80% training and 20% testing.
 
-Exploratory Data Analysis (EDA)
+##### Exploratory Data Analysis (EDA)
 
 Analyzed relationships between customer demographics and purchase behavior.
 Visualized distribution of package purchases (ProdTaken).
 Identified key influencing features such as income, pitch duration, and designation.
 
-Model Training
+##### Model Training
 Multiple models were trained and evaluated:
 
 Logistic Regression
@@ -88,7 +88,7 @@ Decision Tree
 Random Forest
 (Gradient Boosting can be added for further optimization.)
 
-Performance Evaluation
+##### Performance Evaluation
 Each model was evaluated using:
 
 Accuracy
@@ -113,7 +113,7 @@ Customers with managerial roles and frequent travelers are more likely to buy pa
 Decision Tree overfitted, while Random Forest provided the best balance between bias and variance.
 Logistic Regression helps interpret which features most influence customer decisions.
 
-##### Future Work
+### Future Work
 Apply Gradient Boosting (XGBoost, LightGBM) for improved accuracy.
 Use SMOTE or class weighting to handle class imbalance.
 Tune hyperparameters using GridSearchCV.
@@ -121,7 +121,7 @@ Deploy the final model using Flask API or Streamlit.
 Create an interactive dashboard for marketing insights (Power BI / Tableau).
 
 
-###Dependencies
+### Dependencies
 ##### Install required libraries:
 
 pip install pandas numpy scikit-learn matplotlib seaborn
